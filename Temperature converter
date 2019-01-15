@@ -1,0 +1,36 @@
+//
+// Conversion - Program to convert temperature from Celsius degrees into Farenheit : Farenheit = Celsius * (212 -  32)/100 + 32
+//
+//
+#include <cstdio>
+#include <cstidlib>
+#include <iostream>
+using namespace std;
+
+int main (int nNumberofArgs, char* pszArgs [] )
+{
+	//enter temperature in Celsius
+	int celsius
+	cout << "Enter the temperature in Celsius:";
+	cin >> celsius;
+
+
+	//calculate conversion factor for Celsius
+	// to Farenheit
+	int factor;
+	factor = 212-32;
+	// use conversion factor to convert Celsius
+	//into Farenheit values
+	int farenheit;
+	farenheit = factor * celsius/100 +32;
+
+	//output the results (followed by a NewLine)
+	cout << "farenheit value is:";
+	cout << farenheit << endl;
+	// wait until user is ready before terminating program
+	// to allow user to see the program results
+	cout << "Press Enter to continue..." << endl;
+	cin.ignore(10, '\n');
+	cin.get ();
+	return 0;
+}
